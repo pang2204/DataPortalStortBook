@@ -13,7 +13,7 @@ export const Avartar = ({image, size}) =>(
         <code>
           <span><b>import </b></span>
           <span>{`{Avartar}`}</span>
-          <span><b>from </b></span>
+          <span><b> from </b></span>
           <span><font color="red"> './../components/Avartar'</font></span>
         </code>
       </div>

@@ -27,7 +27,7 @@ storiesOf('Navigation', module)
   .add('Tabs', () => <Navigation listTabs={['Tab1','Tab2']} />)
 
 storiesOf('Dropdown', module)
-  .add('addListItem', () => <addListItem seachOptions={seachOptions} />)
+  .add('addListItem', () => <DropdownAddListItem seachOptions={seachOptions} />)
 
 storiesOf('Avatar', module)
   .add('Size', () => <Avartar image={avartarImage} size='small' />)

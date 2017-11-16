@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-
-export const Avartar_Tiny_Size = ({pic}) => (
+export const Navigation = ({listTabs}) => (
   <div className="ui container">
     <div className="ui row vertical segment">
-      <h1 className="ui header">Avartar
-          <div className="sub header">{`<Avartar_Tiny_Size/>`}</div>
+      <h1 className="ui header">Navigation
+        <div className="sub header">{`<Navigation />`}</div>
       </h1>
     </div>
     <div className="ui row vertical segment">
       <div className="ui ignored message">
         <code>
           <span><b>import </b></span>
-          <span>{`{Avartar_Tiny_Size}`} </span>
+          <span>{`{Navigation}`} </span>
           <span><b>from </b></span>
-          <span><font color="red">'./../components/Avartar_Tiny_Size'</font></span>
+          <span><font color="red">'./../components/Navigation'</font></span>
         </code>
       </div>
     </div>
@@ -31,8 +30,8 @@ export const Avartar_Tiny_Size = ({pic}) => (
         </thead>
         <tbody>
           <tr>
-            <td>Pic</td>
-            <td>String</td>
+            <td>listName</td>
+            <td>List(String)</td>
             <td>-</td>
             <td>-</td>
           </tr>
@@ -40,13 +39,18 @@ export const Avartar_Tiny_Size = ({pic}) => (
       </table>
     </div>
     <div className="ui row vertical segment">
-    <h3 className="ui header">Preview</h3>
-    <img class="ui tiny circular image" src={pic} />
+      <h3 className="ui header">Preview</h3>
+      <div className="ui secondary menu nav-item">
+        <div className="ui secondary pointing menu">
+          <a className="item active" >{listTabs[0]}</a>
+          <a className="item" href="#" >{listTabs[1]}</a>
+        </div>
+      </div>
     </div>
     <div className="ui row vertical segment"> 
       <h3 className="ui header">Code</h3>
       <div className="ui ignored message">
-        <pre>{ `<img class="ui tiny circular image" src={pic} />` }</pre>
+        <pre>{ `<Navigation listTabs={['Tab1','Tab2']}/>` }</pre>
       </div>
     </div>
   </div>

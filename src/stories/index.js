@@ -15,9 +15,9 @@ import './../assets/semantic/components/accordion.js'
  
 
 const seachOptions = [
-  { key: 'Most Relevant', text: 'Most Relevant', value: 'angular' },
-  { key: 'Most Favorite', text: 'Most Favorite', value: 'css' },
-  { key: 'Most Pinned',  text: 'Most Pinned', value: 'design' },
+  { key: 'Most Relevant', text: 'Most Relevant', value: '' },
+  { key: 'Most Favorite', text: 'Most Favorite', value: '' },
+  { key: 'Most Pinned',  text: 'Most Pinned', value: '' },
 ]
 
 storiesOf('Header', module)
@@ -26,8 +26,8 @@ storiesOf('Header', module)
 storiesOf('Navigation', module)
   .add('Tabs', () => <Navigation listTabs={['Tab1','Tab2']} />)
 
-storiesOf('DropdownAddListItem ', module)
-  .add('addListItem', () => <DropdownAddListItem  seachOptions={seachOptions} />)
+storiesOf('Dropdown', module)
+  .add('addListItem', () => <addListItem seachOptions={seachOptions} />)
 
 storiesOf('Avatar', module)
   .add('Size', () => <Avartar image={avartarImage} size='small' />)

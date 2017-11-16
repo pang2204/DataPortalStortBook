@@ -3,7 +3,7 @@
 - Navigation
    -  Tabs: รับ Props {listTabs} 
 - Dropdown
-    - addListItem : รับ {ListItem}
+    - addListItem : รับ {listItem}
 - Avartar
     - Size  รับ Props {image, size}
     

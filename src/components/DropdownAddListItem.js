@@ -1,20 +1,21 @@
-import React,{ Component } from 'react'
+import React, { Component} from 'react'
+import { Dropdown } from 'semantic-ui-react'
 
 
-export const Header_with_Logo = ({logo}) => (
+export const DropdownAddListItem = ({seachOptions}) => (
   <div className="ui container">
     <div className="ui row vertical segment">
-      <h1 className="ui header">Header
-          <div className="sub header">{`<Header_with_Logo/>`}</div>
+      <h1 className="ui header">Dropdown 
+        <div className="sub header">{`<DropdownAddListItem />`}</div>
       </h1>
     </div>
     <div className="ui row vertical segment">
       <div className="ui ignored message">
         <code>
           <span><b>import </b></span>
-          <span>{`{Header_with_Logo}`} </span>
+          <span>{`{DropdownAddListItem }`} </span>
           <span><b>from </b></span>
-          <span><font color="red">'./../components/Header_with_Logo'</font></span>
+          <span><font color="red">'./../components/DropdownAddListItem '</font></span>
         </code>
       </div>
     </div>
@@ -31,7 +32,7 @@ export const Header_with_Logo = ({logo}) => (
         </thead>
         <tbody>
           <tr>
-            <td>logo</td>
+            <td>seachOptions</td>
             <td>String</td>
             <td>-</td>
             <td>-</td>
@@ -40,36 +41,15 @@ export const Header_with_Logo = ({logo}) => (
       </table>
     </div>
     <div className="ui row vertical segment">
-    <h3 className="ui header">Preview</h3>
-      <div className="ui borderless main menu">
-        <div className="left item">
-          <a className="item"><img src={logo} alt="Pronto Logo" /></a>
-        </div>
-        <div className="right item">
-          <a className="item"> Menu 1</a>
-          <a className="item">Menu 2 </a>
-        </div>
-      </div>
+      <h3 className="ui header">Preview</h3>
+      <Dropdown placeholder='Select Option' selection options={seachOptions} />
     </div>
     <div className="ui row vertical segment"> 
       <h3 className="ui header">Code</h3>
       <div className="ui ignored message">
-        <pre>
-{ `<div className="ui borderless main menu">
-<div className="left item">
-  <a className="item"><img src={logo} alt="Pronto Logo" /></a>
-</div>
-<div className="right item">
-  <a className="item"> Menu 1</a>
-  <a className="item">Menu 2 </a>
-</div>
-</div>` }
-        </pre>
+        <pre>{ `<DropdownAddListItem  seachOptions={seachOptions} />` }</pre>
       </div>
     </div>
   </div>
 )
-  
-  
-  
-  
+ 

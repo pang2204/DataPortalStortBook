@@ -1,20 +1,20 @@
-import React from 'react'
+import React, {Component } from 'react'
 
 
-export const Avartar_Mini_Size = ({pic}) => (
+export const Avartar = ({image, size}) =>(
   <div className="ui container">
     <div className="ui row vertical segment">
-      <h1 className="ui header">Avartar
-          <div className="sub header">{`<Avartar_Mini_Size/>`}</div>
+      <h1 className="ui header">Avartar 
+        <div className="sub header">{`<Avartar />`}</div>
       </h1>
     </div>
     <div className="ui row vertical segment">
       <div className="ui ignored message">
         <code>
           <span><b>import </b></span>
-          <span>{`{Avartar_Mini_Size}`} </span>
+          <span>{`{Avartar}`}</span>
           <span><b>from </b></span>
-          <span><font color="red">'./../components/Avartar_Mini_Size'</font></span>
+          <span><font color="red"> './../components/Avartar'</font></span>
         </code>
       </div>
     </div>
@@ -31,7 +31,13 @@ export const Avartar_Mini_Size = ({pic}) => (
         </thead>
         <tbody>
           <tr>
-            <td>Pic</td>
+            <td>image</td>
+            <td>String</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>size</td>
             <td>String</td>
             <td>-</td>
             <td>-</td>
@@ -40,18 +46,19 @@ export const Avartar_Mini_Size = ({pic}) => (
       </table>
     </div>
     <div className="ui row vertical segment">
-    <h3 className="ui header">Preview</h3>
-    <img class="ui mini circular image" src={pic} />
+      <h3 className="ui header">Preview</h3>
+      <a className={"ui " + size +  " image"}><img src={image} /></a>
     </div>
     <div className="ui row vertical segment"> 
       <h3 className="ui header">Code</h3>
       <div className="ui ignored message">
-        <pre>{ `<img class="ui mini circular image" src={pic} />` }</pre>
+        <pre>{ `<Avartar image={avartarImage} size='small'/>` }</pre>
       </div>
     </div>
   </div>
 )
   
   
+
   
   
